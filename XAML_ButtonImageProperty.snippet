@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Button.Image property</Title>
+      <Author>Alessandro Del Sole</Author>
+      <Description>Assign Button.Image property with platform-specific icons</Description>
+      <HelpUrl>https://github.com/AlessandroDelSole/XamarinFormsSnippets</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Keywords>
+        <Keyword></Keyword>
+      </Keywords>
+      <Shortcut />
+    </Header>
+    <Snippet>
+      <References />
+      <Imports />
+      <Declarations />
+      <Code Language="XAML" Kind="any" Delimiter="$"><![CDATA[<!-- Refer to the Xamarin doc for icon sizes -->
+<Button>
+    <Button.Image>
+         <OnPlatform x:TypeArguments="FileImageSource"
+                     WinPhone="Assets/MyIcon.png"
+                     iOS="MyIcon.png"
+                     Android="MyIcon.png" />
+    </Button.Image>
+</Button>]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

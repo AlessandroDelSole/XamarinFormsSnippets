@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Assign a resource image to Image controls</Title>
+      <Author>Alessandro Del Sole</Author>
+      <Description>Assign an image file in the app's resources to an Image control</Description>
+      <HelpUrl>https://github.com/AlessandroDelSole/XamarinFormsSnippets</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Keywords>
+        <Keyword></Keyword>
+      </Keywords>
+      <Shortcut />
+    </Header>
+    <Snippet>
+      <References />
+      <Imports />
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Image1</ID>
+          <ToolTip>Replace with your Image name</ToolTip>
+          <Default>Image1</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[// Add an Image control in your page
+
+// Copy an image file into the PCL and set its Build Action as Embedded Resource
+// Don't forget to replace RootNamespace with the name of your PCL project
+$Image1$.Source = ImageSource.FromResource("RootNamespace.ImageName.jpg");]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

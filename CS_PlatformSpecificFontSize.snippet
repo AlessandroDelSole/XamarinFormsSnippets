@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Change platform specific font size</Title>
+      <Author>Alessandro Del Sole</Author>
+      <Description>Change the font size of a control with a platform specific value</Description>
+      <HelpUrl>https://github.com/AlessandroDelSole/XamarinFormsSnippets</HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Keywords>
+        <Keyword></Keyword>
+      </Keywords>
+      <Shortcut />
+    </Header>
+    <Snippet>
+      <References />
+      <Imports />
+      <Declarations>
+        <Literal Editable="true">
+          <ID>Label</ID>
+          <ToolTip>Replace with the proper type</ToolTip>
+          <Default>Label</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>Large</ID>
+          <ToolTip>Replace with Default, Small, Medium, Micro, Large</ToolTip>
+          <Default>Large</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[$Label$1.FontSize = Device.GetNamedSize(NamedSize.$Large$, typeof($Label$));]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
